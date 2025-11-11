@@ -16,3 +16,17 @@ console.log("oppgave 6: string, number, null, undefined, boolean.");
 
 console.log("oppgave 7a: null som er definert som null, mens undefined er en variabel som ikke er definert.");
 console.log("oppgave 7b: dette kan være nyttig vis man vil sjekke om en variabel er definert eller ikke.");
+
+
+//oppgavesett 2b
+
+//oppg 2
+
+//a
+// siden vi ikke initialiserer variabelen, vil den være dataypen undefined.
+
+//b) nå har vi initialisert variabelen så derfor blir datatypen number.
+
+//c) siden teskten er inne i to "" blir det en string datatype.
+
+//d) dette blir en boolean dataype fordi den er true.
