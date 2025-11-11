@@ -64,36 +64,63 @@ console.log(resultat);
 //først så regner den ut det som er inni parentesen, altså 5 + 3 = 8, deretter ganger den det med 2, som gir 16.
 
 
+//Sander - Oppgavesett 3b Sammensatte operatorer
 
-console.log("Oppgave 1: Det vil skrives 10, men siden det er skrevet med const, vil ikke variabelen endre seg.");
-const i = 10;
-console.log(`i = ${i}`);
-
+console.log("Sander - Oppgavesett 3b Sammensatte operatorer");
 
 //oppgave 2
-//const x = 10;
-console.log(`i = ${x}`);
+let score;
+score = 10;
 
-console.log("Det den gjør er at den bytter ut x med i, så det blir i = 10");
+score = 20;
+console.log(score);
+
 
 //oppgave 3
-const y = 10;
+let points;
+points = 10;
 
-console.log(`y = ${y}`);
-console.log("Den vil nå bytte y med y, også skrive ut den opprinelige verdien, som er 10.");
+points += 5;
+console.log(points);
+//Det den gjør er at den adder 5 til den opprinelige verdien av points, som var 10, så det blir 15.
 
-//Oppgave 4
+//oppgave 4
+let lives;
+lives = 3;
 
+lives -= 1;
+console.log(lives);
+//Det den gjør er at den trekker 1 fra den opprinelige verdien av lives, som var 3, så det blir 2.
 
-let z;
-{
-    z = 10;
+//oppgave 5
+let multiplier;
+multiplier = 4;
 
-    //utskrift a)
-    console.log(`z = ${z}`);
-}
+multiplier *= 2;
+console.log(multiplier);
+//Det den gjør er at den ganger den opprinelige verdien av multiplier, som var 4, med 2, så det blir 8.
 
-//utskrift b)
-console.log(`z = ${z}`)
+//oppgave 6
+let speed;
+speed = 100;
 
-console.log("Begge utskriftene vil gi 10, fordi z er deklarert utenfor blokken, og dermed tilgjengelig både inni og utenfor blokken.");
+speed /= 2;
+console.log(speed);
+//Det den gjør er at den deler den opprinelige verdien av speed, som var 100, med 2, så det blir 50.
+
+//oppgave 7
+let number;
+number = 10;
+
+number += 5; //dette adderer 5 til 10
+number *= 2; //dette ganger resultatet med 2
+number -= 4; //dette trekker fra 4
+number /= 2; //dette deler resultatet med 2
+console.log(number); //tilsammen blir dette 13, etter alle operasjonene.
+
+//oppgave 8
+
+let k = 8;
+let l = 10;
+
+console.log(k * l);
