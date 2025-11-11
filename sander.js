@@ -124,3 +124,69 @@ let k = 8;
 let l = 10;
 
 console.log(k * l);
+
+
+//Sander - Oppgavesett 3c Operatorer og datatyper
+
+console.log("Sander - Oppgavesett 3c Operatorer og datatyper");
+
+
+//oppgave 2
+console.log(5 + 5);
+console.log(10 + 20);
+//Den legger sammen to tall i to forskelige operasjoner.
+
+//oppgave 3
+console.log("5" + "5");
+console.log("Hei " + "verden");
+//her er alle datatypene strenger, det gjør at istedenfor at 5 + 5 blir 10, så blir det "55". I den andre operasjonen så blir det "Hei verden".
+
+//oppgave 4
+
+console.log("5" + 5); // dette blir 55 fordi den ser på 5 som en streng.
+console.log(5 + "5"); // samme her, den ser på 5 som en streng.
+console.log("Tall: " + 5 + 5); // her blir det "Tall: 55" fordi den ser på alt som strenger.
+console.log("Sum: " + (5 + 5)); // her blir det "Sum: 10" fordi den regner ut 5 + 5 først.
+
+//oppgave 5
+
+console.log("10" - "5");
+console.log("10" * "2");
+console.log("10" / "2");
+console.log("10" - 3);
+console.log("10" * 3);
+console.log("10" / 3);
+//den tenker at alle verdiene er tall, så den regner ut som vanlig.
+
+//oppgave 6
+
+console.log("Hei" - "der");
+console.log("Hei" * 3);
+console.log("Hei" / 2);
+//den vil nå si til oss at man ikke kan dele på ting som ikke er tall, så det blir NaN (Not a Number) i alle tre operasjonene.
+
+//oppgave 7
+{
+
+    let a = 10;
+    a += 5;
+    console.log(a);
+    
+    let b = "Hei";
+    b += " verden";
+    console.log(b);
+    //det blir ganske likt på begge to, den legger til det nye til den opprinelige verdien.
+
+}
+
+//oppgave 8
+
+{
+    let c = 20;
+    c -= 5;
+    console.log(c);
+
+    let d = "Hei";
+    d += " verden";
+    console.log(d);
+}
