@@ -90,14 +90,14 @@ b) et funksjonskall er det maskinen eller programe gjør når man utfører en fu
 c) add()
 */
 
-console.info("Sander oppgavesett-5 oppgave 3")
+console.info("Sander oppgavesett-5 1 oppgave 3")
 /*
 3
 parameter er det som står inne i () på funksjonen.
 Argumente er det som man skriver inn i () til funskjonskallet. Og dette vil da bli verdien til funksjonen sitt parameter.
 */
 
-console.info("Sander oppgavesett-5 oppgave 4")
+console.info("Sander oppgavesett-5 1 oppgave 4")
 foo("parameteret mitt er");
 foo("Dette er parameteret mitt")
 
@@ -106,7 +106,7 @@ function foo(info){
 }
 
 
-console.info("Sander oppgavesett-6 oppgave 5");
+console.info("Sander oppgavesett-5 1 oppgave 5");
 
 parameter("hei", "verden");
 
