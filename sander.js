@@ -1,7 +1,6 @@
 // Sander oppgavesett 5
 console.log("Sander, oppgavesett 5");
 
-
 //Oppgave 1
 {
 const i = 10;
@@ -72,4 +71,45 @@ console.log(result);
 
 
 
+console.log("Sander oppgavesett-5 1")
+//oppgavesett 5 1
 
+//1) henikten med en funksjon er at maskinen kan gjøre komplekse ting uten å skrive masse kode hver gang.
+
+//2 a
+function add(){
+    console.log("Hello world")
+}
+// her vil add brukes som fuksjonen, så når man skriver det og et parantes vil alt som står inne i "{" skje.
+
+/*
+2 
+b) et funksjonskall er det maskinen eller programe gjør når man utfører en funksjon.
+
+2
+c) add()
+*/
+
+console.info("Sander oppgavesett-5 oppgave 3")
+/*
+3
+parameter er det som står inne i () på funksjonen.
+Argumente er det som man skriver inn i () til funskjonskallet. Og dette vil da bli verdien til funksjonen sitt parameter.
+*/
+
+console.info("Sander oppgavesett-5 oppgave 4")
+foo("parameteret mitt er");
+foo("Dette er parameteret mitt")
+
+function foo(info){
+    console.info(info)
+}
+
+
+console.info("Sander oppgavesett-6 oppgave 5");
+
+parameter("hei", "verden");
+
+function parameter(para1, para2){
+    console.info(`Jeg fikk to parametere; ${para1} ${para2}.`);
+}
