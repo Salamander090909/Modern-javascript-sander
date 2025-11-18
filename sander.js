@@ -56,3 +56,29 @@ console.log(5 == '5') //denne blir true fordi verdien er lik selv om datatypen e
 console.log(5 === '5') //derfor vil denne bli false siden den skjekker både verdi og datatype, som ikke er lik.
 console.log(5 != 4) //denne blir true fordi 5 ikke er lik 4
 console.log(5 !== '5') //denne blir true fordi den skjekker både verdi og datatype, som ikke er lik.
+
+
+//oppgave 4
+console.log(5 > 3 && 10 > 5)
+console.log(5 > 3 && 10 < 5)
+console.log(7 >= 7 && 2 < 5)
+console.log(4 < 2 && 3 > 1)
+//for at en && skal bli 
+
+
+
+//oppgave 5
+console.log(5 > 3 || 10 > 5)
+console.log(5 > 3 || 10 < 5)
+console.log(7 < 7 || 2 < 1)
+console.log(4 < 2 || 3 > 1)
+//for at alle her skal bli true trenger en av opprasjonene å være true.
+
+
+//oppgave 6
+console.log(5 > 3 && 10 > 5 || 2 === 2)
+console.log(4 < 2 && 3 > 1 || 10 === 10)
+console.log(5 === 5 && 3 > 10 || 8 < 12)
+//her vil den først skjekke && delen, det er fordi den står først. Også sjekker den resten. Vis man hadde brukt parantes kunne dette ha påvirket svarert.
+
+
