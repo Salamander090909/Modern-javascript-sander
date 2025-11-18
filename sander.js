@@ -1,6 +1,7 @@
 // Sander oppgavesett 5
 console.log("Sander, oppgavesett 5");
 
+
 //Oppgave 1
 {
 const i = 10;
@@ -85,12 +86,13 @@ function add(){
 /*
 2 
 b) et funksjonskall er det maskinen eller programe gjør når man utfører en funksjon.
-
-2
-c) add()
 */
+//2 c)
+add()
+
 
 console.info("Sander oppgavesett-5 1 oppgave 3")
+
 /*
 3
 parameter er det som står inne i () på funksjonen.
@@ -113,3 +115,7 @@ parameter("hei", "verden");
 function parameter(para1, para2){
     console.info(`Jeg fikk to parametere; ${para1} ${para2}.`);
 }
+
+
+console.info("Sander oppgavesett-5 2 oppgave 1")
+
