@@ -1,5 +1,5 @@
-// Sander oppgavesett 5
-console.log("Sander, oppgavesett 5");
+// Sander oppgavesett 5a
+console.log("Sander, oppgavesett 5a");
 
 
 //Oppgave 1
@@ -25,7 +25,7 @@ console.log(`i = ${x}`);
 const y = 10;
 }
 
-console.log(`y = ${y}`);
+//console.log(`y = ${y}`);
 //den vil ikke skrive noe i konsollen fordi y er definert utenfor blokken, og er inne i en parantes. Derfor er y ikke tilgjengelig utenfor blokken, og det vil føre til en
 
 
@@ -71,9 +71,15 @@ console.log(result);
 //den gir to utskrifter, den første er b pluss 5 og den andre er resultate av c+d.
 
 
+console.info("Sander oppgavesett-5b 1 oppgave 6")
 
-console.log("Sander oppgavesett-5 1")
-//oppgavesett 5 1
+//Oppgave 6
+//Først vil den gi b en verdi på 10. Så vil den kalle funksjonen add med b og 5 som argumenter. Inne i funksjonen vil c få verdien til b (10) og d få verdien 5. Deretter vil den regne ut result som er c + d (10 + 5 = 15) og skrive ut resultatet (15) i konsollen.
+
+
+console.info("Sander oppgavesett-5b 1 oppgave 1")
+
+//oppgavesett 5b 1
 
 //1) henikten med en funksjon er at maskinen kan gjøre komplekse ting uten å skrive masse kode hver gang.
 
@@ -91,7 +97,7 @@ b) et funksjonskall er det maskinen eller programe gjør når man utfører en fu
 add()
 
 
-console.info("Sander oppgavesett-5 1 oppgave 3")
+console.info("Sander oppgavesett-5b 1 oppgave 3")
 
 /*
 3
@@ -99,7 +105,7 @@ parameter er det som står inne i () på funksjonen.
 Argumente er det som man skriver inn i () til funskjonskallet. Og dette vil da bli verdien til funksjonen sitt parameter.
 */
 
-console.info("Sander oppgavesett-5 1 oppgave 4")
+console.info("Sander oppgavesett-5b 1 oppgave 4")
 foo("parameteret mitt er");
 foo("Dette er parameteret mitt")
 
@@ -108,7 +114,7 @@ function foo(info){
 }
 
 
-console.info("Sander oppgavesett-5 1 oppgave 5");
+console.info("Sander oppgavesett-5b 1 oppgave 5");
 
 parameter("hei", "verden");
 
@@ -117,5 +123,14 @@ function parameter(para1, para2){
 }
 
 
-console.info("Sander oppgavesett-5 2 oppgave 1")
 
+console.info("Sander oppgavesett-5b 2 oppgave 1");
+//oppgavesett 5b 2 oppgave 1
+
+/*
+Return brukes for å avslutte en fonksjon og sende den verdien tilbake til der funksjonen ble kalt.
+Dette gjør at vi kan sende verdien ut av scoppet.
+*/
+
+/* oppgavesett 5b 2 oppgave 2*/
+console.log("hallo world")
