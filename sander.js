@@ -46,7 +46,7 @@ console.log(`z = ${z}`);
 
 
 //Oppgave 5
-let a;
+//let a;
 fubar();
 console.log(`a = ${a}`);
 
@@ -132,5 +132,100 @@ Return brukes for å avslutte en fonksjon og sende den verdien tilbake til der f
 Dette gjør at vi kan sende verdien ut av scoppet.
 */
 
-/* oppgavesett 5b 2 oppgave 2*/
-console.log("hallo world")
+/* oppgavesett 5b 2 oppgave 2a*/
+console.log(hallo());
+
+function hallo(){
+    return "hallo world";
+}
+
+
+//oppgavesett 5b 2 oppgave 2b
+
+let e = 1;
+console.log(test(e));
+
+function test(e) {
+    e += 1;
+    return `sander har bæsjet ${e} ganger idag`;
+}
+
+//oppgavesett 5b 2 oppgave 3a
+let h = 5;
+let g = 10;
+console.log(sum(h, g));
+
+function sum(h, g){
+    return h * g;
+}
+
+//oppgavesett 5b 2 oppgave 3b
+
+function sum(h, g){
+    const result = h*g;
+    console.log(result);
+    return result;
+}
+
+sum(5,10);
+
+//oppgavesett 5b 2 oppgave 4a
+console.log(sub(10, 5, 3));
+
+function sub(a, b, c) {
+    const result = a - b - c;
+    return result;
+}
+
+//oppgavesett 5b 2 oppgave 4b
+sub(10, 5, 3);
+
+function sub(a, b, c) {
+    const result = a - b - c;
+    console.log(result);
+    return result;
+}
+
+//oppgavesett 5b 2 oppgave 5
+
+function ferdig(resultat){
+    console.log(resultat);
+    return resultat;
+}
+
+ferdig("Jeg er endelig ferdig med oppgavene, jeg syntes mye av det var vanskelig, men til slutt føler jeg at jeg skjønner det meste. Ganseke fornøyd!")
+
+
+console.log("Sander oppgavesett 5c")
+//oppgavesett 5c
+
+const world = () => {
+    console.log("Hello, world!");
+}
+
+world()
+
+//oppgavesett 5c 2
+let j = 15;
+const fuu = j => {
+    console.log(j);
+}
+
+fuu(j)
+//ved at funksjonen kun har en parameter kan man droppe å skrive parenteser rundt parameteret i pilfunksjonen.
+
+//oppgavesett 5c oppg 3
+let v, m, n;
+v = 2
+m = 3
+n = 4
+const fii = (v,m,n) => {
+    console.log(v, m, n);
+}
+
+fii(v, m, n)
+
+/*oppgavesett 5c oppg 5
+Nei, jeg vet ikke så mye om forskelen mellom funksjoner og pilfunskjoner.
+*/
+
