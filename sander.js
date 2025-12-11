@@ -55,15 +55,15 @@ sjekkOmTall('1');
 
 
 
-let a = 8
-let b = "hei"
+let d = 8
+let e = "hei"
 
 
-if (typeof a === "number" && typeof b === "number") {
+if (typeof d === "number" && typeof e === "number") {
 
 
-    if (a > 5 || b > 5) {
-        const større = a > 5 ? a : b
+    if (d > 5 || e > 5) {
+        const større = d > 5 ? d : e
         console.log(`Jeg fant en variabel som var større enn fem! Den hadde verdien: ${større}`)
     } else {
         console.log("Ingen av variablene er større enn fem")
@@ -71,10 +71,46 @@ if (typeof a === "number" && typeof b === "number") {
 
     } else {
 
-        if (typeof a !== "number") {
-            console.log(`Variabelene er ikke av typen number, den er av typen: ${typeof a}`)
+        if (typeof d !== "number") {
+            console.log(`Variabelene er ikke av typen number, den er av typen: ${typeof d}`)
         }
-        if (typeof b !== "number") {
-            console.log(`Variabelene er ikke av typen number, den er av typen: ${typeof b}`)
+        if (typeof e !== "number") {
+            console.log(`Variabelene er ikke av typen number, den er av typen: ${typeof e}`)
         }
     }
+
+
+
+console.info('Sander oppgavesett 6b')
+
+//oppg 1) Return returnerer verdien ut av funksjoner til der du kalte den fra.
+
+
+//oppg 2
+function AddereTall(f, g) {
+    if (typeof f === "number" && typeof g === "number") {
+        return f + g
+    } 
+}
+
+const result = AddereTall(3, 4)
+console.log(result)
+
+
+//oppg 3
+
+function SjekkeTekst(para1, para2) {
+    if (typeof para1 === "string" && typeof para2 === "string") {
+        return para1 + para2
+    } else console.log('Jeg skriver bare ut tekst!')
+}
+
+const tekstResultat = SjekkeTekst('hei jeg heter Sander.',  'Jeg liker hunder')
+console.log(tekstResultat)
+
+
+//oppg 4
+
+function kalkulator(h, i) {
+    if
+}
