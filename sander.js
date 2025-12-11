@@ -37,7 +37,7 @@ console.info('Sander oppgavesett 6a oppgave 2');
     /*e)*/typer(2,'3') // de er ikke begge string eller number så det vil være false.
 }
 
-console.info('Sander oppgavesett 6a oppgave 3');
+console.info('Sander oppgavesett 6a oppgave 3a');
 
 let c
 {
@@ -52,3 +52,29 @@ let c
     
 }
 sjekkOmTall('1');
+
+
+
+let a = 8
+let b = "hei"
+
+
+if (typeof a === "number" && typeof b === "number") {
+
+
+    if (a > 5 || b > 5) {
+        const større = a > 5 ? a : b
+        console.log(`Jeg fant en variabel som var større enn fem! Den hadde verdien: ${større}`)
+    } else {
+        console.log("Ingen av variablene er større enn fem")
+    }
+
+    } else {
+
+        if (typeof a !== "number") {
+            console.log(`Variabelene er ikke av typen number, den er av typen: ${typeof a}`)
+        }
+        if (typeof b !== "number") {
+            console.log(`Variabelene er ikke av typen number, den er av typen: ${typeof b}`)
+        }
+    }
