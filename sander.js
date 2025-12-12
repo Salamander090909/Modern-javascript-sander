@@ -135,3 +135,144 @@ function kalkulator(h, i, j) {
 }
 
 console.log(kalkulator(5, 3, '*'));
+
+
+console.info('Sander Oppgavesett6c')
+//sander oppgavesett-6c
+
+
+//oppg 1
+console.log(convertToCelsius(40));
+
+function convertToCelsius(fahren) {
+    const celsius = (fahren - 39) * 5/9;
+    return `${fahren} fharenhait = ${celsius} celsius`
+}
+
+
+//oppg 2
+console.log(calculateAge(2009))
+
+function calculateAge(FødÅr) {
+    const alder = (2025 - FødÅr);
+    return `Du er ${alder} år gammel`
+}
+
+
+//oppg 3
+console.log(calculate(3, 5, '*'))
+
+function calculate(k, l, m) {
+
+    let calcResult
+
+    if (m === '+') {
+        calcResult = (k + l)
+    } else if (m === '-') {
+        calcResult = (k - l)
+    } else if (m === '*') {
+        calcResult = (k * l)
+    } else if (m === '/') {
+        calcResult = (k / l)
+    } else {
+        return '${m} er ikke en regneoppratør.'
+    }
+
+    return `${k} ${m} ${l} = ${calcResult}`
+}
+
+//oppg 4
+console.log(isEven(10))
+console.log(isEven(5))
+
+let tall
+function isEven(tall) {
+    return tall % 2 === 0
+}
+
+
+//oppg 5
+console.log(findMax(15, 10))
+
+function findMax(n, o) {
+
+    let max
+
+    if (n < o) {
+        max = o
+    } else if (n > o) {
+        max = n
+    } else {
+        return `Tallene er like store`
+    }
+
+    return `${max} er det største tallet`
+}
+
+
+//oppg 6
+console.log(calculateTax(67000))
+
+function calculateTax(inntekt) {
+
+    let tax
+
+    if (inntekt < 50000) {
+        tax = '10%'
+    } else if (inntekt > 50000 && inntekt < 100000) {
+        tax = '20%'
+    } else if (inntekt > 100000) {
+        tax = '30%'
+    }
+
+    return `Du må betale ${tax} skatt`
+}
+
+
+//oppg 7
+console.log(isValidEmail('sandertennstrand@gmail'))
+
+function isValidEmail(mail) {
+    return mail.includes('@')
+
+}
+
+//oppg 8
+console.log(findLongestString('sander', 'sander'))
+
+function findLongestString(string1, string2) {
+    if (string1.length > string2.length) {
+        return `${string1} er lengst`
+    } else if (string1.length < string2.length) {
+        return `${string2} er lengst`
+    } else {
+        return `Stringene er like lange`
+    }
+
+    return `${findLongestString}`
+}
+
+//oppg 9
+console.log(calculateDiscount(100, 10))
+console.log(calculateDiscount(200, 25));
+
+function calculateDiscount(pris, rabatt) {
+    const nyPris = pris - (pris * rabatt / 100);
+
+    return nyPris
+};
+
+//oppg 10 
+console.log(isStrongPassword('JegLikerPølse15'))
+
+function isStrongPassword(password) {
+    const langtNok = password.length >= 8
+    const harTall = /\d/.test(password)
+
+    if (langtNok && harTall) {
+        return `True`
+    } else {
+        return `false`
+    }
+}
+
