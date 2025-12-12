@@ -110,7 +110,28 @@ console.log(tekstResultat)
 
 
 //oppg 4
+function kalkulator(h, i, j) {
+    if (typeof h === 'number' && typeof i === 'number') {
 
-function kalkulator(h, i) {
-    if
+        let KalkResultat
+
+        if (j === '+' ) {
+            KalkResultat = (h + i)
+        } else if (j === '-' ) {
+            KalkResultat = (h - i)
+        } else if (j === '*' ) {
+            KalkResultat = (h * i)
+        } else if (j === '/' ) {
+            KalkResultat = (h / i)
+        } else {
+            return `${j} er ikke en gyldig operasjon. Programmet terminerer!`;
+        }
+
+        return `${h} ${j} ${i} = ${KalkResultat}`;
+
+    } else {
+        return `${h} eller ${i} er ikke et tall! Kan ikke utføre ${j}. Programmet terminerer!`;
+    }
 }
+
+console.log(kalkulator(5, 3, '*'));
