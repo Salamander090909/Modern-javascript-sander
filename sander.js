@@ -1,341 +1,125 @@
-console.info('Sander oppgavesett 6a');
-//sander oppgavesett 6a oppgave 1
+console.info('opggavesett 7-1')
 
-function sjekkverdi(verdi) {
-    if (typeof verdi === 'string') {
-        console.log('STRING STRING STRING!')
-    } else {
-        console.log('Dette er ikke en String i det hele tatt')
-    }
-}
+/* oppg 1
+a) arrays er en enklere måte å sammle mange tall, dette er praktisk når man skal endre på ting senere som for eksempel en poengsum.
+b) Det som er forskelig fra andre kodespråk er at en variabel kan holde mange verdier, de ligger i en fast rekkefølge og at man henter de ved å bruke plaseringen deres. Den første plasseringen i en rekke starter altid på 0
+*/
 
-sjekkverdi(1);
-sjekkverdi('1')
-sjekkverdi('navn')
+// oppg 2 a
 
+const liste = [];
 
-
-console.info('Sander oppgavesett 6a oppgave 2');
-
-{
-    const a = 5
-    const b = 10
-
-    function typer(a, b) {
-
-        if (typeof a === typeof b) {
-            console.log('Variablene du brukte er av samme type!')
-        } else {
-            console.log('Variablene du brukte er IKKE av samme type!')
-        }
-    }
-
-    /*a)*/typer('en', 1) // dette er ikke likt siden '' er en string mens 1 er et tall
-    /*b)*/typer(1,1) // begge er tall så det vil være true
-    /*c)*/typer(2,3) // igjen så er begge tall, men forskjellige verdier. Dette har ingenting å si siden den sjekker typeof.
-    /*d)*/typer('2','3') // her er begge string så det vil være true
-    /*e)*/typer(2,'3') // de er ikke begge string eller number så det vil være false.
-}
-
-console.info('Sander oppgavesett 6a oppgave 3a');
-
-let c
-{
-
-    function sjekkOmTall(c) {
-        if (typeof c === 'number') {
-            console.log('Dette er et tall!')
-        } else {
-            console.log('Test failed')
-        }
-    }
-    
-}
-sjekkOmTall('1');
+//b
+const ender = ["Donald Duck", "Ole", "Dole", "Doffen", "Skrue McDuck", "Petter Smart", "Bestemor Duck", "Naboen", "Guffen", "Magica"];
 
 
 
-let d = 8
-let e = "hei"
-
-
-if (typeof d === "number" && typeof e === "number") {
-
-
-    if (d > 5 || e > 5) {
-        const større = d > 5 ? d : e
-        console.log(`Jeg fant en variabel som var større enn fem! Den hadde verdien: ${større}`)
-    } else {
-        console.log("Ingen av variablene er større enn fem")
-    }
-
-    } else {
-
-        if (typeof d !== "number") {
-            console.log(`Variabelene er ikke av typen number, den er av typen: ${typeof d}`)
-        }
-        if (typeof e !== "number") {
-            console.log(`Variabelene er ikke av typen number, den er av typen: ${typeof e}`)
-        }
-    }
-
-
-
-console.info('Sander oppgavesett 6b')
-
-//oppg 1) Return returnerer verdien ut av funksjoner til der du kalte den fra.
-
-
-//oppg 2
-function AddereTall(f, g) {
-    if (typeof f === "number" && typeof g === "number") {
-        return f + g
-    } 
-}
-
-const result = AddereTall(3, 4)
-console.log(result)
+//c
+console.log(ender[2], ender[5], ender[8])
 
 
 //oppg 3
+//a) index er plasseringen til en verdi i en array. Så donald duck vil ha index 0 i dette tilfelle.
 
-function SjekkeTekst(para1, para2) {
-    if (typeof para1 === "string" && typeof para2 === "string") {
-        return para1 + para2
-    } else console.log('Jeg skriver bare ut tekst!')
-}
+//b første index i en array er altid 0
 
-const tekstResultat = SjekkeTekst('hei jeg heter Sander.',  'Jeg liker hunder')
-console.log(tekstResultat)
+//c) det finnes egentlig ikke noe fast slutt på array, men indexen til den siste i rekken er bare plasseringen -1
+
+//d) array.length er hvor lang rekken er, så vis det er tre elementer i arrayen, vil length være 3.
+
+//e) siden index starter på 0, vil altid array.length -1 være verdien av indexen.
 
 
 //oppg 4
-function kalkulator(h, i, j) {
-    if (typeof h === 'number' && typeof i === 'number') {
+console.log(typeof ender)
 
-        let KalkResultat
+//a) vis man bruker typeof på en array vil det bli object som man kan se.
 
-        if (j === '+' ) {
-            KalkResultat = (h + i)
-        } else if (j === '-' ) {
-            KalkResultat = (h - i)
-        } else if (j === '*' ) {
-            KalkResultat = (h * i)
-        } else if (j === '/' ) {
-            KalkResultat = (h / i)
-        } else {
-            return `${j} er ikke en gyldig operasjon. Programmet terminerer!`;
-        }
+//b) for å sjekke om en variabel eller en konstant er en array bruker man 'array.isArray()'. Den vil da returnere true vis det er en array.
 
-        return `${h} ${j} ${i} = ${KalkResultat}`;
+//c)
+console.log(sjekkArray(ender));
 
+
+function sjekkArray(verdi) {
+    if (Array.isArray(verdi)) {
+        return `Argumente er en array`;
     } else {
-        return `${h} eller ${i} er ikke et tall! Kan ikke utføre ${j}. Programmet terminerer!`;
+        return `Argumente er ikke en array`
     }
 }
 
-console.log(kalkulator(5, 3, '*'));
 
-
-console.info('Sander Oppgavesett6c')
-//sander oppgavesett-6c
-
+console.log('Oppgavesett-7-2')
 
 //oppg 1
-console.log(convertToCelsius(40));
+const tall = [10, 20, 30]
 
-function convertToCelsius(fahren) {
-    const celsius = (fahren - 39) * 5/9;
-    return `${fahren} fharenhait = ${celsius} celsius`
-}
-
+console.log(tall[2])
 
 //oppg 2
-console.log(calculateAge(2009))
+const helloWorld = [];
 
-function calculateAge(FødÅr) {
-    const alder = (2025 - FødÅr);
-    return `Du er ${alder} år gammel`
-}
+helloWorld[0] = 'hello';
+helloWorld[1] = 'world';
 
+console.log(helloWorld)
 
 //oppg 3
-console.log(calculate(3, 5, '*'))
+const lengde = [1, 2, 3, 4, 5];
 
-function calculate(k, l, m) {
-
-    let calcResult
-
-    if (m === '+') {
-        calcResult = (k + l)
-    } else if (m === '-') {
-        calcResult = (k - l)
-    } else if (m === '*') {
-        calcResult = (k * l)
-    } else if (m === '/') {
-        calcResult = (k / l)
-    } else {
-        return '${m} er ikke en regneoppratør.'
-    }
-
-    return `${k} ${m} ${l} = ${calcResult}`
-}
+console.log(lengde.length)
 
 //oppg 4
-console.log(isEven(10))
-console.log(isEven(5))
+const frukt = ["apple", "banana", "cherry"]
 
-let tall
-function isEven(tall) {
-    return tall % 2 === 0
-}
+frukt[1] = "blueberry";
 
+console.log(frukt)
 
 //oppg 5
-console.log(findMax(15, 10))
+const tallRekke = [5, 10, 15]
 
-function findMax(n, o) {
+tallRekke[3] = 20;
 
-    let max
-
-    if (n < o) {
-        max = o
-    } else if (n > o) {
-        max = n
-    } else {
-        return `Tallene er like store`
-    }
-
-    return `${max} er det største tallet`
-}
+console.log(tallRekke);
 
 
 //oppg 6
-console.log(calculateTax(67000))
+const farger = ['red', 'green', 'blue']
 
-function calculateTax(inntekt) {
-
-    let tax
-
-    if (inntekt < 50000) {
-        tax = '10%'
-    } else if (inntekt > 50000 && inntekt < 100000) {
-        tax = '20%'
-    } else if (inntekt > 100000) {
-        tax = '30%'
-    }
-
-    return `Du må betale ${tax} skatt`
-}
-
+console.log(farger[farger.length - 1])
 
 //oppg 7
-console.log(isValidEmail('sandertennstrand@gmail'))
+const syvGangen = [7, 14, 21];
 
-function isValidEmail(mail) {
-    return mail.includes('@')
-
+if (syvGangen[0] < syvGangen[2]) {
+    console.log('true')
+} else {
+    console.log('false')
 }
+
 
 //oppg 8
-console.log(findLongestString('sander', 'sander'))
+const toGangen = [2, 4, 6, 8]
 
-function findLongestString(string1, string2) {
-    if (string1.length > string2.length) {
-        return `${string1} er lengst`
-    } else if (string1.length < string2.length) {
-        return `${string2} er lengst`
-    } else {
-        return `Stringene er like lange`
-    }
+console.log(toGangen[0], toGangen[2])
 
-    return `${findLongestString}`
-}
 
 //oppg 9
-console.log(calculateDiscount(100, 10))
-console.log(calculateDiscount(200, 25));
+const SubArrays = [
+    [1, 2, 3],
+    [4, 5, 6]
+];
 
-function calculateDiscount(pris, rabatt) {
-    const nyPris = pris - (pris * rabatt / 100);
-
-    return nyPris
-};
-
-//oppg 10 
-console.log(isStrongPassword('JegLikerPølse15'))
-
-function isStrongPassword(password) {
-    const langtNok = password.length >= 8
-    const harTall = /\d/.test(password)
-
-    if (langtNok && harTall) {
-        return `True`
-    } else {
-        return `false`
-    }
-}
+console.log(SubArrays[1][1])
 
 
-console.info('Oppgavesett 6d')
+//oppg 10
+const x = 100;
+const y = 200;
+const z = 300;
 
-//oppg 1
+const variabel = [x, y, z];
 
-function velgMeny(selectedOption) {
-    if (typeof selectedOption !== 'number') {
-        console.log('Error');
-        return
-
-    }
-
-    if (selectedOption === 1) {
-        console.log('Brukeren startet programmet')
-    }
-    else if (selectedOption === 2) {
-        console.log('Brukeren vil gjøre en utskrift')
-    }
-    else if (selectedOption === 3) {
-        console.log('Brukeren vil avslutte programmet')
-    } else {
-        console.log('Valget var ikke gyldig, velg på nytt')
-    }
-}
-
-velgMeny('2')
-
-
-//oppg 2
-console.log(calculator('4', 5, 1))
-
-function calculator(q, r, s) {
-    if (typeof r !== 'number' || typeof s !== 'number') {
-        return 'syntax error';
-    }
-
-        let calculatorResult;
-
-        switch (q) {
-            case '+':
-                calculatorResult = r + s;
-                break;
-            
-            case '-':
-                calculatorResult = r - s;
-                break;
-            
-            case '*':
-                calculatorResult = r * s;
-                break;
-
-            case '/':
-                calculatorResult = r / s;
-                break;
-            
-            default:
-                return 'syntax error';
-        }
-
-    return `${r} ${q} ${s} = ${calculatorResult}`;
-       
-    }
-
+console.log(variabel);
