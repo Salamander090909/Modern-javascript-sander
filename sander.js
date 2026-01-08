@@ -276,3 +276,66 @@ function isStrongPassword(password) {
     }
 }
 
+
+console.info('Oppgavesett 6d')
+
+//oppg 1
+
+function velgMeny(selectedOption) {
+    if (typeof selectedOption !== 'number') {
+        console.log('Error');
+        return
+
+    }
+
+    if (selectedOption === 1) {
+        console.log('Brukeren startet programmet')
+    }
+    else if (selectedOption === 2) {
+        console.log('Brukeren vil gjøre en utskrift')
+    }
+    else if (selectedOption === 3) {
+        console.log('Brukeren vil avslutte programmet')
+    } else {
+        console.log('Valget var ikke gyldig, velg på nytt')
+    }
+}
+
+velgMeny('2')
+
+
+//oppg 2
+console.log(calculator('4', 5, 1))
+
+function calculator(q, r, s) {
+    if (typeof r !== 'number' || typeof s !== 'number') {
+        return 'syntax error';
+    }
+
+        let calculatorResult;
+
+        switch (q) {
+            case '+':
+                calculatorResult = r + s;
+                break;
+            
+            case '-':
+                calculatorResult = r - s;
+                break;
+            
+            case '*':
+                calculatorResult = r * s;
+                break;
+
+            case '/':
+                calculatorResult = r / s;
+                break;
+            
+            default:
+                return 'syntax error';
+        }
+
+    return `${r} ${q} ${s} = ${calculatorResult}`;
+       
+    }
+
