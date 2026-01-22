@@ -1,75 +1,126 @@
-console.info('oppgavesett-9 oppg 1')
+console.log('oppgavesett-10 oppg10')
+//a)
 
-const elev1 = {
-    fornavn: 'Sander',
-    etternavn: 'Bry',
-    alder: 16
-};
+/*
 
-const elev2 = {
-    fornavn: 'Andreas',
-    etternavn: 'Ostby',
-    alder: 16
-};
+executor()
 
-const elev3 = {
-    fornavn: 'Knut',
-    etternavn: 'Solberg',
-    alder: 16
-};
-
-const elev4 = {
-    fornavn: 'Mikael',
-    etternavn: 'Munch',
-    alder: 16
-};
-
-console.info('Oppg 2');
-
-hentNavn(elev1)
-
-function hentNavn(elev) {
-    console.log(
-        ' Navn: ' + elev.fornavn +
-        ' Etternavn: ' + elev.etternavn +
-        ' Alder ' + elev.alder
-    );
-};
-
-console.info('oppg 3 og 4')
-
-let serienummerTeller = 1;
-
-function carFactory(seter, hestekrefter, modell, type) {
-  return {
-    seter: seter,
-    hestekrefter: hestekrefter,
-    modell: modell,
-    type: type,
-    serienummer: null,
-
-    genererSerienummer() {
-      this.serienummer = serienummerTeller;
-      serienummerTeller++;
-    }
-  };
+function heiVerden() {
+    console.log('Hello world!')
 }
 
-const bil1 = carFactory(5, 150, "Toyota Corolla", "Sedan");
-bil1.genererSerienummer();
+function lever() {
+    console.log('I’m alive')
+}
 
-const bil2 = carFactory(7, 300, "Volvo XC90", "SUV");
-bil2.genererSerienummer();
+function green() {
+    console.log('Its not easy being green!')
+}
 
-const bil3 = carFactory(5, 190, "Audi A4", "Stasjonsvogn");
-bil3.genererSerienummer();
+function executor() {
+    heiVerden()
+    lever()
+    green()
+}
+//b)
 
-const bil4 = carFactory(2, 420, "Porsche 911", "Sport");
-bil4.genererSerienummer();
+function executor(piler, cri, Parles) {
+  piler();
+  cri();
+  Parles();
+}
+
+executor(
+  () => console.log("Amors piler treffer alltid i hjertet!"),
+  () => console.log("Cri’ Cri’ d’amore!"),
+  () => console.log("Parles vous francois?")
+);
 
 
-const biler = [bil1, bil2, bil3, bil4];
 
-console.log(biler);
+console.info('oppg 2')
 
-console.info('jeg skjønner ikke siste oppgave')
+function hei(name) {
+    console.log(`Hello ${name}`)
+}
+
+function login(name) {
+    console.log(`${name} just logged in`)
+}
+
+function logout(name) {
+    console.log(`${name} just logged out`)
+}
+
+function executor(name, callback) {
+  callback(name);
+}
+
+executor("Sander", hei);
+executor("Sander", login);
+executor("Sander", logout);
+
+//b
+
+executor("", () => console.log("Franskmenn liker ikke piler"));
+executor("", () => console.log("Piler kan være farlige, eller de kan bare vise vei!"));
+executor("", () => console.log("Pilgård er ikke en pil, selv om han piler fra sted til sted!"));
+
+*/
+
+console.log('oppg 3')
+
+function runRoutine(...routines) {
+  let index = 0
+  let lastTime = Date.now()
+
+  function next() {
+    const now = Date.now()
+    const secondsPassed = ((now - lastTime) / 1000).toFixed(2)
+
+    if (index !== 0) {
+      console.log(`Tid siden forrige kall: ${secondsPassed} sek`)
+    }
+
+    lastTime = now
+    routines[index]()
+    index++
+
+    if (index < routines.length) {
+      const delay = Math.random() * 2 // mellom 0 og 2 sekunder
+      console.log(`Venter ${delay.toFixed(2)} sek før neste...\n`)
+      setTimeout(next, delay * 1000)
+    } else {
+      console.log("\n Alle funksjoner er kjørt")
+    }
+  }
+
+  next()
+}
+
+function funcA() {
+  console.log('Kjører funksjon A')
+}
+
+function funcB() {
+  console.log('Kjører funksjon B')
+}
+
+function funcC() {
+  console.log("Kjører funksjon C")
+}
+
+const routines = [
+  funcA,
+  funcB,
+  funcC,
+  funcA,
+  funcB,
+  funcC,
+  funcA,
+  funcB,
+  funcC,
+  funcA
+]
+
+runRoutine(...routines)
