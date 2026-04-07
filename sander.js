@@ -1,6 +1,5 @@
 console.log('oppgavesett-10 oppg10')
 //a)
-
 /*
 
 executor()
